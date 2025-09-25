@@ -57,14 +57,14 @@ export const dummyShowsData = [
     {
         "_id": "324544",
         "id": 324544,
-        "title": "In the Lost Lands",
+        "title": "Kishkindhapuri",
         "overview": "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
-        "poster_path": "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
+        "poster_path": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kishkindhapuri-et00457842-1757054623.jpg",
+        "backdrop_path": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kishkindhapuri-et00457842-1757054623.jpg",
         "genres": [
-            { "id": 28, "name": "Action" },
-            { "id": 14, "name": "Fantasy" },
-            { "id": 12, "name": "Adventure" }
+            { "id": 28, "name": "Horror" },
+            { "id": 14, "name": "Mystery" },
+            { "id": 12, "name": "Thriller" }
         ],
         "casts": dummyCastsData,
         "release_date": "2025-02-27",
@@ -77,33 +77,35 @@ export const dummyShowsData = [
     {
         "_id": "1232546",
         "id": 1232546,
-        "title": "Until Dawn",
-        "overview": "One year after her sister Melanie mysteriously disappeared, Clover and her friends head into the remote valley where she vanished in search of answers. Exploring an abandoned visitor center, they find themselves stalked by a masked killer and horrifically murdered one by one...only to wake up and find themselves back at the beginning of the same evening.",
-        "poster_path": "https://image.tmdb.org/t/p/original/juA4IWO52Fecx8lhAsxmDgy3M3.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/icFWIk1KfkWLZnugZAJEDauNZ94.jpg",
+        "title": "Mirai",
+        "overview": "A street-smart young man discovers he is the only answer and the shield to stop a powerful force from reaching the nine sacred books of King Ashoka. Mirai is his journey of experiencing the power of Brahmand.",
+        "poster_path": "https://image.tmdb.org/t/p/w1280/sUsVimPdA1l162FvdBIlmKBlWHx.jpg",
+        "backdrop_path": "https://cdn.district.in/movies-assets/images/cinema/Mirai_Poster-1e0ab180-8894-11f0-9d36-8174d6609eb9.jpg?format=webp&imwidth=256",
         "genres": [
-            { "id": 27, "name": "Horror" },
-            { "id": 9648, "name": "Mystery" }
+            { "id": 27, "name": "Action" },
+            { "id": 9648, "name": "Adventure" },
+            { "id": 53, "name": "Thriller" },
+            { "id": 14, "name": "Fantasy" }
         ],
         "casts": dummyCastsData,
         "release_date": "2025-04-23",
         "original_language": "en",
         "tagline": "Every night a different nightmare.",
-        "vote_average": 6.405,
+        "vote_average": 7.405,
         "vote_count": 18000,
         "runtime": 103,
     },
     {
         "_id": "552524",
         "id": 552524,
-        "title": "Lilo & Stitch",
-        "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
-        "poster_path": "https://image.tmdb.org/t/p/original/mKKqV23MQ0uakJS8OCE2TfV5jNS.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
+        "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+        "overview": "The Demon Slayer Corps plunge into Infinity Castle to defeat Muzan. However, the remaining Hashiras and the Demon Slayers",
+        "poster_path": "https://image.tmdb.org/t/p/w1280/eDlq2DfW4hd4H1g5DPojYyE5MCO.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/w1280/eDlq2DfW4hd4H1g5DPojYyE5MCO.jpg",
         "genres": [
-            { "id": 10751, "name": "Family" },
-            { "id": 35, "name": "Comedy" },
-            { "id": 878, "name": "Science Fiction" }
+            { "id": 10751, "name": "Action" },
+            { "id": 35, "name": "Anime" },
+            { "id": 878, "name": " Adventure" }
         ],
         "casts": dummyCastsData,
         "release_date": "2025-05-17",
@@ -116,14 +118,13 @@ export const dummyShowsData = [
     {
         "_id": "668489",
         "id": 668489,
-        "title": "Havoc",
-        "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
-        "poster_path": "https://image.tmdb.org/t/p/original/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
+        "title": "Little Hearts",
+        "overview": "Akhil`s failure in the EAMCET exam pushes him into the grind of long-term coaching, where academic pressure and personal heartbreak collide. Struggling to find meaning, he discovers the fine line between shallow attraction and true love.",
+        "poster_path": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/little-hearts-et00459285-1756102427.jpg",
+        "backdrop_path": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/little-hearts-et00459285-1756102427.jpg",
         "genres": [
-            { "id": 28, "name": "Action" },
-            { "id": 80, "name": "Crime" },
-            { "id": 53, "name": "Thriller" }
+            { "id": 28, "name": "Comedy" },
+            { "id": 80, "name": "Romantic" }
         ],
         "casts": dummyCastsData,
         "release_date": "2025-04-25",

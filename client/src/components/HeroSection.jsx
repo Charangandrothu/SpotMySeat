@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 import { ArrowRight, CalendarIcon, CameraIcon, ClockIcon, MonitorCheck, MonitorPlay, MoveIcon } from 'lucide-react'
 import backgroundImage from '../assets/backgroundimage.jpg' // <-- Import
 import { useNavigate } from 'react-router-dom'
-
+import  './HeroSection.css';
 const HeroSection = () => {
 
     const navigate=useNavigate();
@@ -28,13 +28,16 @@ const HeroSection = () => {
       <p className='max-w-md text-gray-300'>OG revolves around a gangster named Ojas Gambheera 
         who returns to Mumbai following his ten year disappearance, to kill another crime boss, Omi Bhau.</p>
         <button onClick={() => navigate('/movies')}
-        className="flex items-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 transition rounded-full font-medium cursor-pointer"
-        >
+className="flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 active:scale-95 transition-all duration-200 rounded-full font-medium cursor-pointer text-white hover:shake"
+>        
         Explore Movies
         <ArrowRight className="w-5 h-5" />
         </button>
         <button onClick={() => window.open('https://www.youtube.com/watch?v=7Y5q41D8_hs')}
-        className="flex items-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 transition rounded-full font-medium cursor-pointer"
+        className="flex items-center gap-2 px-6 py-3 bg-red-600 
+        hover:bg-red-700 active:scale-95 transition-all duration-200 
+        rounded-full font-medium cursor-pointer text-white hover:shake"
+
         >
         View Trailer
         <MonitorPlay className="w-5 h-5" />
