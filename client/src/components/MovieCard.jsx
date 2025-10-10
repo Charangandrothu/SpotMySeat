@@ -2,6 +2,7 @@ import { StarIcon } from 'lucide-react';
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import timeFormat from '../lib/timeFormat';
+import MovieDetails from '../pages/MovieDetails';
 
 const MovieCard = ({movie}) => {
     const Navigate=useNavigate();
@@ -17,8 +18,9 @@ const MovieCard = ({movie}) => {
         </p>
         <div className='flex items-center justify-between mt-4 pb-4'>
         <button
-            onClick={() => { Navigate(`/movie/${movie.id}`); scrollTo(0, 0); }}
+            onClick={() => { Navigate(`/movie/${movie._id}`); scrollTo(0, 0); }}
             className='px-4 py-2 text-xs bg-rose-600 hover:bg-rose-700 transition rounded-full font-medium cursor-pointer text-white'
+            element={<MovieDetails />} 
         >
             Buy Tickets
         </button>
