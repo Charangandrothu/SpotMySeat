@@ -197,28 +197,35 @@ export const dummyShowsData = [
     }
 ]
 
-export const dummyDateTimeData = {
-    "2025-07-24": [
-        { "time": "2025-07-24T01:00:00.000Z", "showId": "68395b407f6329be2bb45bd1" },
-        { "time": "2025-07-24T03:00:00.000Z", "showId": "68395b407f6329be2bb45bd2" },
-        { "time": "2025-07-24T05:00:00.000Z", "showId": "68395b407f6329be2bb45bd3" }
-    ],
-    "2025-07-25": [
-        { "time": "2025-07-25T01:00:00.000Z", "showId": "68395b407f6329be2bb45bd4" },
-        { "time": "2025-07-25T03:00:00.000Z", "showId": "68395b407f6329be2bb45bd5" },
-        { "time": "2025-07-25T05:00:00.000Z", "showId": "68395b407f6329be2bb45bd6" }
-    ],
-    "2025-07-26": [
-        { "time": "2025-07-26T01:00:00.000Z", "showId": "68395b407f6329be2bb45bd7" },
-        { "time": "2025-07-26T03:00:00.000Z", "showId": "68395b407f6329be2bb45bd8" },
-        { "time": "2025-07-26T05:00:00.000Z", "showId": "68395b407f6329be2bb45bd9" }
-    ],
-    "2025-07-27": [
-        { "time": "2025-07-27T01:00:00.000Z", "showId": "68395b407f6329be2bb45bda" },
-        { "time": "2025-07-27T03:00:00.000Z", "showId": "68395b407f6329be2bb45bdb" },
-        { "time": "2025-07-27T05:00:00.000Z", "showId": "68395b407f6329be2bb45bdc" }
-    ]
-}
+export const dummyDateTimeData = (() => {
+  const data = {};
+  const baseShowId = "68395b407f6329be2bb45bd";
+  const today = new Date();
+
+  // Define show hours (IST / local time)
+  const showHours = [6, 9, 12, 15, 18, 21]; // 6AM, 9AM, 12PM, 3PM, 6PM, 9PM
+
+  for (let i = 0; i < 4; i++) {
+    const date = new Date(today);
+    date.setDate(today.getDate() + i);
+    const dateStr = date.toISOString().split("T")[0];
+
+    data[dateStr] = showHours
+      .map((hour, index) => {
+        const showTime = new Date(date);
+        showTime.setHours(hour, 0, 0, 0); // local IST
+        return {
+          time: showTime.toISOString(),
+          showId: baseShowId + (i * showHours.length + index + 1).toString(16),
+        };
+      })
+      // Filter out past shows only for today
+      .filter(show => i > 0 || new Date(show.time) > today);
+  }
+
+  return data;
+})();
+
 
 export const dummyDashboardData = {
     "totalBookings": 14,

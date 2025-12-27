@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
-import { dummyDateTimeData } from '../assets/assets';
+import { dummyDateTimeData, dummyShowsData } from '../assets/assets';
 import { ClockIcon } from 'lucide-react';
 import isoTimeFormat from '../lib/isoTimeFormat';
 import Loading from '../components/Loading';
+import MovieCard from '../components/MovieCard';
 
 const SeatLayout = () => {
 
@@ -25,7 +26,7 @@ const SeatLayout = () => {
   }
   useEffect(()=>{
     getShow()
-  },[])
+  },[id,date])
   return show?(
     <div className='flex flex-col md:flex-row px-6 md:px-16
     lg:px-40 py-30 md:pt-50'>
@@ -37,21 +38,24 @@ const SeatLayout = () => {
           Available Timings
         </p>
         <div className='mt-5 space-y-1'>
-          {show.dateTime[date].map((item)=>(
-            <div className={`flex items-center gap-2 px-6 py-2 w-max rounded-r-md
+          { (show.dateTime?.[date] ?? []).length === 0 ? (
+            <p className="px-6 text-sm text-gray-400">No timings available for this date</p>
+          ) : (
+            (show.dateTime?.[date] ?? []).map((item, idx)=>(
+            <div key={idx}
+                onClick={() => setSelectedTime(item)} className={`flex items-center gap-2 px-6 py-2 w-max rounded-r-md
             cursor-pointer transition ${selectedTime?.time==item.time?
               "bg-primary text-white": "hover:bg-primary/20"
             }`}>
               <ClockIcon className="w-4 h-4"/>
               <p className='text-sm'>{isoTimeFormat(item.time)}</p>
             </div>
-          ))}
+          )))}
         </div>
       </div>
 
       {/*Seats Layout*/}
-      <div></div>
-
+      
     </div>
   ) : (
     <Loading/>

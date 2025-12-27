@@ -21,10 +21,7 @@ const MovieDetails = () => {
         dateTime:dummyDateTimeData
       })
     }
-    setShow({
-      movie: show,
-      dateTime: dummyDateTimeData
-    });
+    
   };
 
   useEffect(() => {
