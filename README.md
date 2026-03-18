@@ -31,7 +31,7 @@ React.js
 
 JavaScript
 
-CSS / Tailwind CSS (based on your UI)
+CSS / Tailwind CSS 
 
 Backend / Database
 
