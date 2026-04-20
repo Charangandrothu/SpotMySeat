@@ -1,4 +1,4 @@
-🎬 SpotMySeat — Real-Time Movie Ticket Booking App
+🎬 SpotMySeat — Real-Time Movie Ticket Booking 
 
 SpotMySeat is a real-time movie ticket booking web application designed to handle high-concurrency seat selection. It ensures that multiple users cannot book the same seat at the same time by implementing a seat-locking mechanism using Firebase transactions / real-time updates.
 
