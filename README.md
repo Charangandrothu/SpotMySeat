@@ -5,7 +5,7 @@ SpotMySeat is a real-time movie ticket booking web application designed to handl
  
 
 ✅ Browse Movies & Show Timings
-✅ View Seat Layout (Available / Locked / Booked)
+✅ View Seat Layout (Available / Locked or Booked)
 ✅ Real-Time Seat Locking (No Double Booking)
 ✅ Secure Booking Confirmation
 ✅ User Authentication (Login / Signup)
