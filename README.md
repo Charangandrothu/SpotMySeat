@@ -62,7 +62,7 @@ spotmyseat/
 │   ├── pages/
 │   ├── firebase/
 │   ├── utils/
-│   ├── App.js
+│   ├── App.j
 │   ├── index.js
 │── public/
 │── package.json
